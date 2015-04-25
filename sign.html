@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#body-color{
+background-color:#6699CC;
+}
+#Sign-Up{
+background-image:url('sign-up.png');
+background-size:500px 500px;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+margin-top:150px;
+margin-bottom:150px;
+margin-right:150px;
+margin-left:450px;
+padding:9px 35px; 
+}
+#button{
+border-radius:10px;
+width:100px;
+height:40px;
+background:#FF00FF;
+font-weight:bold;
+font-size:20px;
+}
+</style>
+</head>
+<body id="body-color">
+<div id="Sign-Up">
+<fieldset style="width:30%"><legend>Registration Form</legend>
+<table border="0">
+<tr>
+<form method="POST" action="connectivity.php">
+<td>E-mail</td><td> <input type="text" name="email"></td>
+</tr>
+<tr>
+<td>FirstName</td><td> <input type="text" name="fname"></td>
+</tr>
+<tr>
+<td>LastName</td><td> <input type="text" name="lname"></td>
+</tr>
+<tr>
+<td>Comapny</td><td> <input type="text" name="company"></td>
+</tr>
+<tr>
+<td>Phone </td><td><input type="number" name="phone"></td>
+</tr>
+<tr>
+<td>Password </td><td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td><input id="button" type="submit" name="submit" value="Sign-Up"></td>
+</tr>
+</form>
+</table>
+</fieldset>
+</div>
+</body>
+</html>
+
+
+
