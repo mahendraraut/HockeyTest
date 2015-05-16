@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>App Installer</title>
+        <title>HocheyKit</title>
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="<?php echo $b ?>blueprint/screen.css" type="text/css" media="screen, projection">
         <link rel="stylesheet" href="<?php echo $b ?>blueprint/print.css" type="text/css" media="print">
