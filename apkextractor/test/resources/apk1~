@@ -1,0 +1,35 @@
+<?php
+$APKLocation = "apk/test/resources/apk1";
+
+$versionCode = getVersionCodeFromAPK($APKLocation);
+echo $versionCode;
+
+//Based on the fact that the Version Code is the first tag in the AndroidManifest.xml file, this will return its value
+//PHP implementation based on the AXML format described here: http://stackoverflow.com/questions/2097813/how-to-parse-the-androidmanifest-xml-file-inside-an-apk-package/14814245#14814245
+function getVersionCodeFromAPK($APKLocation) {
+
+    $versionCode = "N/A";
+
+    //AXML LEW 32-bit word (hex) for a start tag
+    $XMLStartTag = "00100102";
+
+    //APK is esentially a zip file, so open it
+    $zip = zip_open($APKLocation);
+    if ($zip) {
+        while ($zip_entry = zip_read($zip)) {
+            //Look for the AndroidManifest.xml file in the APK root directory
+            if (zip_entry_name($zip_entry) == "AndroidManifest.xml") {
+                //Get the contents of the file in hex format
+                $axml = getHex($zip, $zip_entry);
+                //Convert AXML hex file into an array of 32-bit words
+                $axmlArr = convert2wordArray($axml);
+                //Convert AXML 32-bit word array into Little Endian format 32-bit word array
+                $axmlArr = convert2LEWwordArray($axmlArr);
+                //Get first AXML open tag word index
+                $firstStartTagword = findWord($axmlArr, $XMLStartTag);
+                //The version code is 13 words after the first open tag word
+                $versionCode = intval($axmlArr[$firstStartTagword + 13], 16);
+
+                break;
+            }
+        }
