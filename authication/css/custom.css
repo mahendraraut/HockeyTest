@@ -1,0 +1,186 @@
+.hero-bg.alt {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    background-image: url('/images/wood-tile.jpg');
+    background-position: 50% 0px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.hero-bg {
+    width: auto;
+    height: auto;
+    min-height: 500px;
+    padding-top: 108px;
+    padding-bottom: 53px;
+    background-color: #E9D7B9;
+    background-image: url('/images/app/signup/devices-transparent.png'), url('/images/app/signup/coffee-pencil.png'), url('/images/app/signup/wood-bg.jpg');
+    background-position: -55px -150px, 100% 52px, 0px 21%;
+    background-size: 330px auto, 150px auto, 1260px auto;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-attachment: scroll, scroll, fixed;
+}
+.hero-title.lp {
+    margin-bottom: 0px;
+    padding-top: 30px;
+}
+.hero-title {
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+.title.lp {
+    display: block;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    font-size: 54px;
+    line-height: 62px;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+.sign-up-form {
+    position: relative;
+    display: block;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #FFF;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+}
+img {
+    vertical-align: middle;
+	max-width: 100%;
+
+display: inline-block;
+}
+.form-field-group {
+    margin-bottom: 10px;
+	padding-top: 4px;}
+
+.form-field-icon {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: #008CFF;
+    box-shadow: none;
+}
+.form-field-icon img {
+    width: 38px;
+    height: 38px;
+}
+
+
+.form-field {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 0px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-style: solid solid solid none;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.form-field:focus {
+    border-style: solid solid solid none;
+    border-color: #008CFF;
+    background-color: #FFFCE3;
+	color: #008CFF;}
+.w-input, .w-select {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    vertical-align: middle;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+
+.form-field-box {
+	margin-left: 40px;
+   }
+.w-row:after {
+    clear: both;
+}
+.w-row:before, .w-row:after {
+    content: " ";
+    display: table;
+}
+
+.full-column {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.w-col-6 {
+    width: 50%;
+}
+.w-col {
+    position: relative;
+    float: left;
+    
+    min-height: 1px;
+}
+.w-col-4 {
+    width: 33.3333%;
+}
+.button.full {
+    width: 100%;
+}
+.button.green {
+    background-color: #89C000;
+}
+.button {
+    display: inline-block;
+    height: 45px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    background-image: none;
+    transition-delay: initial;
+    color: #FFF;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.w-button {
+    display: inline-block;
+    padding: 12px;
+    background-color: #000;
+    color: #FFF;
+    border: 0px none;
+    line-height: inherit;
+}
+.form-message.success {
+	background-color: #C4E07B;}
+.form-message {
+    padding-top: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+	text-align: center;}
+.p {
+    padding-bottom: 8px;
+    margin:0px;
+}

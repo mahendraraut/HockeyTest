@@ -1,0 +1,80 @@
+<html>
+<head lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testfairy</title>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+	<div class="hero-bg alt">
+		<div class="hero-title lp">
+			<h1 class="title lp">
+									<strong>Free Signup</strong>
+							</h1>
+			<div style="font-size:18px">Yes, it is 100% free!</div>
+		</div>
+		<div class="w-form sign-up-form">
+			<form method="post" action="login2.php">
+								<div class="form-field-group" align="center">
+					<a href="https://app.testfairy.com/signup/google/" style="color: #333; vertical-align: middle;">
+						<div style="border: 1px solid #888; border-radius: 3px; width: 100%; box-shadow: 2px 2px 2px #ddd; background-color: white;">
+							<div style="float: left; width: 40px; border-right: 1px solid #888; padding: 8px;">
+								<img src="images/google.png" style="padding: 0px;" />
+							</div>
+							<div style="float: left; padding: 8px; white-space: nowrap;">
+								Sign in with Google
+							</div>
+							<br style="clear: both;" />
+						</div>
+					</a>
+					<div style="margin-top: 12px;">
+						OR
+					</div>
+				</div>
+				<div class="form-field-group">
+					<div class="w-clearfix">
+						<div class="form-field-icon"><img src="images/form-email.png">
+						</div>
+						<div class="form-field-box">
+							<input class="w-input form-field " type="email" placeholder="Work Email..." name="email" id="email" data-name="Email" autofocus="autofocus" required="required" value="">
+						</div>
+					</div>
+				</div>
+				<div class="form-field-group">
+					<div class="w-clearfix">
+						<div class="form-field-icon"><img src="images/form-password.png">
+						</div>
+						<div class="form-field-box">
+							<input class="w-input form-field" type="password" placeholder="Choose Password" name="password" id="password" data-name="Password" required="required">
+							<input class="w-input form-field" type="hidden" name="confirm-password">
+						</div>
+					</div>
+				</div>
+				<div class="form-field-group" style="text-align: center; font-size: 12px;">
+					<input type="hidden" name="iagree" value="true">
+					I have read and agree to the <a href="http://testfairy.com/developer-tos-privacy" target="_blank" style="color: #525252;">terms of service</a>.
+				</div>
+				<div class="w-row form-field-group">
+					<div class="w-col w-col-4"></div>
+					<div class="w-col w-col-4">
+						<input class="w-button button full green" type="submit" value="login" data-wait="Please wait..." onclick="document.getElementsByName('confirm-password')[0].value=document.getElementsByName('password')[0].value;">
+					</div>
+					<div class="w-col w-col-4"></div>
+				</div>
+				<a href="index.html" style="color: #525252;">Sign Up (Free!)</a><br />
+								<a href="forgot.html" style="color: #525252;">Forgot Password</a><br />
+				<input type="hidden" name="signup-timezone" id="signup-timezone">
+				<input type="hidden" name="user-type" value="0">
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="w-container footer-container" style="height: 160px;"></div>
+</div>
